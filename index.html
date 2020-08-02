@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="assets/imgs/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"> -->
+    <link href="assets/style/css/main.css" media="all" rel="stylesheet">
+  </head>
+  <body>
+
+		<main id="main" class="site-wrapper animate-fade">
+			<div class="content animation-group">
+				<div class="social animate-fade-up delay-2">
+					<a href="https://www.instagram.com/drink.canteen/" target="_blank">
+						<img src="assets/imgs/instagram.svg" />
+					</a>
+				</div>
+				<div class="logo-container animate-fade-up delay-2">
+					<img src="assets/imgs/logo.svg" />
+				</div>
+				<div class="headline animate-fade-up delay-3">
+					<h1 class="title-1">Healthy Mixins for the mind, body, & soul.</h1>
+				</div>
+				<div class="sign-up-container animate-fade-up delay-4">
+					<p class="regular mar-bot-8">Be the first to know when we&nbsp;launch.</p>
+					<div class="sign-up">
+						<!-- Begin MailChimp Signup Form -->
+						<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+						<div id="mc_embed_signup">
+						<form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+								<div id="mc_embed_signup_scroll">
+									<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email" required>
+									<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+									<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_74813e5d1413cbb65f9791ec0_56afd0fbaa" tabindex="-1" value=""></div>
+									<input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button">
+								</div>
+						</form>
+						</div>
+
+						<!--End mc_embed_signup-->
+					</div>
+				</div>
+			</div>
+		</main>
+
+    <script media="all" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script media="all" src="assets/js/jquery.waypoints.min.js"></script>
+    <script media="all" src="assets/js/pixi.min.js"></script>
+    <script media="all" src="assets/js/TweenMax.min.js"></script>
+    <script media="all" src="assets/js/main.js"></script>
+    <script media="all" src="assets/js/imagesloaded.pkgd.min.js"></script>
+		<script>
+			// imagesLoaded(document.body, () => document.body.classList.remove('loading'));
+			
+			// var spriteImages = document.querySelectorAll( '.slide-item__image' );
+			var spriteImagesSrc = ["assets/imgs/cruise-hero.png"];
+			var texts = [];
+
+			// for ( var i = 0; i < spriteImages.length; i++ ) {
+			// 	var img = spriteImages[i];
+			// 	// Set the texts you want to display to each slide 
+			// 	// in a sibling element of your image and edit accordingly
+			// 	if ( img.nextElementSibling ) {
+			// 		texts.push(img.nextElementSibling.innerHTML);
+			// 	} else {
+			// 		texts.push('');
+			// 	}
+			// 	spriteImagesSrc.push( img.getAttribute('src' ) );
+			// }
+      
+			var initCanvasSlideshow = new CanvasSlideshow({
+				sprites: spriteImagesSrc,
+				displacementImage: 'assets/imgs/dmaps/2048x2048/clouds.jpg',
+				autoPlay: true,
+				autoPlaySpeed: [4, 3],
+				displaceScale: [5000, 10000],
+				interactive: true,
+				interactionEvent: 'click', // 'click', 'hover', 'both' 
+				displaceAutoFit: false,
+				dispatchPointerOver: true, // restarts pointerover event after click 
+        // fullScreen: true,
+			});
+		</script>
+  </body>
+</html>
