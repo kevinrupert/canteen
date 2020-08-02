@@ -81,11 +81,11 @@
 
         // Addition: Liquid Distortion
         var liquidPosX, liquidDisplacementSprite, liquidDisplacementFilter, liquidBg, liquidVx;
-        PIXI.loader.add("/assets/imgs/dmaps/2048x2048/ripple.jpg").load(setup);
+        PIXI.loader.add("/canteen/assets/imgs/dmaps/2048x2048/ripple.jpg").load(setup);
 
         function setup() {
             liquidPosX = renderer.width / 2;
-            liquidDisplacementSprite = new PIXI.Sprite(PIXI.loader.resources["/assets/imgs/dmaps/2048x2048/ripple.jpg"].texture);
+            liquidDisplacementSprite = new PIXI.Sprite(PIXI.loader.resources["/canteen/assets/imgs/dmaps/2048x2048/ripple.jpg"].texture);
             liquidDisplacementFilter = new PIXI.filters.DisplacementFilter(liquidDisplacementSprite);
             liquidDisplacementSprite.anchor.set(0.5);
             liquidDisplacementSprite.x = renderer.width / 2;
